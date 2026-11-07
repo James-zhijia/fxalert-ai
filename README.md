@@ -100,6 +100,11 @@ python -m pytest test_alert_checker.py -v
 
 另外，也可以整合 EventBridge Scheduler 定期檢查匯率，以及 SNS 發送通知。
 
+## 開發流程與版本控制
+
+- [CI/CD 流程圖](docs/ci-cd-workflow.md)
+- [Git 多人協作流程圖](docs/git-workflow.md)
+
 [查看 AWS 架構設計圖](docs/aws-architecture.md)
 
 **目前 AWS 部分僅完成架構設計，尚未實際部署。**
