@@ -220,6 +220,97 @@
 
         </section>
 
+        <section class="mt-5" id="alertsSection">
+            <div class="dashboard-card">
+
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-2">
+                    <div>
+                        <h4>匯率提醒管理</h4>
+                        <p class="text-secondary mb-0">
+                            設定目標匯率，檢查是否達到提醒條件
+                        </p>
+                    </div>
+
+                    <button type="button" id="checkAlertsBtn" class="btn btn-outline-light">
+                        檢查提醒
+                    </button>
+                </div>
+
+                <!-- 新增提醒 -->
+                <h5 class="mb-3">新增提醒</h5>
+
+                <form id="alertForm">
+                    <div class="row g-3">
+
+                        <div class="col-md-3">
+                            <label class="form-label">來源貨幣</label>
+                            <select id="alertBase" class="form-select">
+                                <option value="USD">USD</option>
+                                <option value="MYR">MYR</option>
+                                <option value="TWD">TWD</option>
+                                <option value="JPY">JPY</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label">目標貨幣</label>
+                            <select id="alertQuote" class="form-select">
+                                <option value="TWD">TWD</option>
+                                <option value="USD">USD</option>
+                                <option value="MYR">MYR</option>
+                                <option value="JPY">JPY</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label">觸發條件</label>
+                            <select id="alertOperator" class="form-select">
+                                <option value=">=">大於或等於 ≥</option>
+                                <option value="<=">小於或等於 ≤</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label">目標匯率</label>
+                            <input type="number" id="alertTarget" class="form-control" min="0.000001" step="any"
+                                placeholder="例如 7.80" required>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">
+                                新增提醒
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+
+                <p id="alertMessage" class="small mt-3" role="status" aria-live="polite"></p>
+
+                <hr class="my-4">
+
+                <!-- 提醒清單 -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="mb-0">我的提醒</h5>
+
+                    <button type="button" id="refreshAlertsBtn" class="btn btn-sm btn-outline-light">
+                        重新整理
+                    </button>
+                </div>
+
+                <div id="alertList">
+                    <p class="text-secondary">正在載入提醒資料...</p>
+                </div>
+
+                <p id="alertCheckResult" class="small mt-3" role="status" aria-live="polite"></p>
+
+            </div>
+        </section>
+
+
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
     <script src="js/app.js"></script>
