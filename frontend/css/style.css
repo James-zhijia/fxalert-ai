@@ -1,0 +1,128 @@
+
+body {
+    background-color: #0b1120;
+    color: #f1f5f9;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #111a2e;
+    border-bottom: 1px solid #263449;
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    color: #818cf8 !important;
+    font-size: 24px;
+}
+
+.dashboard-card {
+    background-color: #172238;
+    border: 1px solid #293750;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.form-control,
+.form-select {
+    background-color: #0f172a;
+    color: #ffffff;
+    border: 1px solid #334155;
+    padding: 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #0f172a;
+    color: #ffffff;
+    border-color: #818cf8;
+    box-shadow: 0 0 0 3px #818cf833;
+}
+
+.form-label {
+    color: #cbd5e1;
+}
+
+.btn-primary {
+    background-color: #6366f1;
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #4f46e5;
+}
+
+.result-number {
+    color: #a5b4fc;
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+hr {
+    border-color: #475569;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+/* 7 / 30 / 90 天按鈕 */
+.period-btn {
+    border-color: #475569;
+    color: #cbd5e1;
+    padding: 9px 18px;
+}
+
+.period-btn:hover,
+.period-btn.active {
+    background-color: #6366f1;
+    border-color: #6366f1;
+    color: white;
+}
+
+/* 統計卡片 */
+.stat-card {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
+}
+
+.stat-card p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.stat-card h4 {
+    color: #f8fafc;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* 漲跌幅顏色 */
+.positive {
+    color: #34d399 !important;
+}
+
+.negative {
+    color: #fb7185 !important;
+}
+
+/* 手機版 */
+@media (max-width: 768px) {
+    .chart-container {
+        height: 260px;
+    }
+
+    .dashboard-card {
+        padding: 20px;
+    }
+}
