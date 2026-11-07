@@ -109,6 +109,12 @@ python -m pytest test_alert_checker.py -v
 
 **目前 AWS 部分僅完成架構設計，尚未實際部署。**
 
+## Dashboard Screenshots
+
+![FXAlert AI Dashboard](docs/screenshots/dashboard.png)
+
+![Alert Management](docs/screenshots/alert-management.png)
+
 ## AI 輔助開發
 
 本專案使用(ChatGPT)協助程式開發、錯誤排查與測試規劃。
