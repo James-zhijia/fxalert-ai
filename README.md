@@ -109,6 +109,13 @@ python -m pytest test_alert_checker.py -v
 
 **目前 AWS 部分僅完成架構設計，尚未實際部署。**
 
+## AI 輔助開發
+
+本專案使用(ChatGPT)協助程式開發、錯誤排查與測試規劃。
+
+詳細使用方式與心得：
+[AI 輔助開發心得](docs/ai-development-notes.md)
+
 ## 7. 後續改進方向
 
 - 將提醒管理功能整合進 Dashboard。
